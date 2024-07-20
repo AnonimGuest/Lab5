@@ -13,6 +13,8 @@ public:
 	string* tools;
 
 	// Default constructor
+	// Called when a GameCharacter is created without any parameters
+	// It initializes the name to "Miner" and allocates memory for the tools array with default tools
 	GameCharacter() {
 		cout << "The default constructor is called" << endl;
 		name = "Miner";
@@ -30,7 +32,7 @@ public:
 		for (int i = 0; i < MAX_TOOLS; i++) {
 			tools[i] = toolArray[i];
 		}
-		std::cout << "the parameterized constructor is called" << std::endl;
+		std::cout << "The parameterized constructor is called" << std::endl;
 	}
 
 	//copy constructor -> called when a gamecharacter is created from another gamecharacter
@@ -42,7 +44,7 @@ public:
 		for (int i = 0; i < MAX_TOOLS; i++) {
 			tools[i] = copy.tools[i];
 		}
-		std::cout << "the copy constructor is called" << std::endl;
+		std::cout << "The copy constructor is called" << std::endl;
 	}
 
 	//assignment operator -> called when an object of game chaarcter is assigned to another gamecharacter with tthe = sign
@@ -54,22 +56,25 @@ public:
 		for (int i = 0; i < 3; i++) {
 			tools[i] = copy.tools[i];
 		}
-		std::cout << "the assignment operator is called" << std::endl;
+		std::cout << "The assignment operator is called" << std::endl;
 		return *this; //returns the gamecharacter object
 	}
 
 	// Destructor
+	// Called when a GameCharacter is destroyed
+	// It deallocates the memory allocated for the tools array to prevent memory leaks
 	~GameCharacter() {
 		delete[] tools;
 	}
 
-	//Display character details
+	// Display character details
 	void displayCharacter() {
 		cout << "Character Name: " << name << endl;
 		cout << "Tools: " << endl;
 		for (int i = 0; i < MAX_TOOLS; i++){
-			cout << "->" << tools[i] << endl;
+			cout << "-> " << tools[i]<< endl;
 		}
+		cout << "\n";
 	}
 };
 

@@ -1,6 +1,8 @@
 #include "GameCharacter.h"
 #include <iostream>
 
+using namespace std;
+
 GameCharacter foo1(GameCharacter p) {
 	return p;
 }
