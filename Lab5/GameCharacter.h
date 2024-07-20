@@ -58,11 +58,19 @@ public:
 		return *this; //returns the gamecharacter object
 	}
 
-
+	// Destructor
 	~GameCharacter() {
 		delete[] tools;
 	}
 
+	//Display character details
+	void displayCharacter() {
+		cout << "Character Name: " << name << endl;
+		cout << "Tools: " << endl;
+		for (int i = 0; i < MAX_TOOLS; i++){
+			cout << "->" << tools[i] << endl;
+		}
+	}
 };
 
 GameCharacter foo1(GameCharacter p);

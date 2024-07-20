@@ -19,5 +19,8 @@ int main() {
 	tools[2] = "bow";
 	GameCharacter p3("jim", tools);
 
+	p1.displayCharacter();
+	p2.displayCharacter();
+
 	return 0;
 }
