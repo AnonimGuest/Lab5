@@ -12,5 +12,12 @@ int main() {
 	foo4(p1);
 	foo5(p1);
 
+	//testing the parameterized constructor
+	std::string tools[3];
+	tools[0] = "pickaxe";
+	tools[1] = "shovel";
+	tools[2] = "bow";
+	GameCharacter p3("jim", tools);
+
 	return 0;
 }
