@@ -8,10 +8,10 @@ using namespace std;
 
 class GameCharacter {
 
+public:
 	string name;
 	string* tools;
 
-public:
 	// Default constructor
 	GameCharacter() {
 		cout << "The default constructor is called" << endl;
