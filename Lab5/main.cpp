@@ -29,7 +29,8 @@ int main() {
 
 	// Testing default constructor
 	cout << "\033[1;31m\nTesting default constructor: \033[0m" << endl;
-	cout << "Name: " << p1.name << "\n" << "Tools: " << p1.tools[0] << ", " << p1.tools[1] << ", " << p1.tools[2] << endl;
+	GameCharacter defaultCharacter;
+	defaultCharacter.displayCharacter();
 
 	//testing the parameterized constructor
 	std::cout << "\033[1;31m\nTesting parameterized constructor: \033[0m" << std::endl;
