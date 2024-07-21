@@ -1,4 +1,18 @@
 // Ceren Askin | Andy Guest | Alexa Bowman - Lab5
+
+// Total Copy Constructor Calls: 3
+
+// foo 1 -- The copy constructor is called once. It is called when 'p' is returned (called just before returning 'p' to create a copy of it)
+
+// foo2 -- The copy constructor is called zero times. It is not called because 'p' be is being passed in by reference, and returned as a refernce (it was never copied). 
+
+// foo3 -- The copy constructor is called once.  It is called when 'p' is returned (called just before returning 'p' to make a copy of it). 
+
+// foo4 -- The copy constructor is called zero times. It is not called because 'p' is being returned as a refernce instead of an actual value.
+
+// foo5 -- The copy constructor is called once. It is called to initalize 'gc' as a copy of 'p'. the copy constructor is called when here "GameCharacter gc". 
+
+
 #include <iostream>
 #include "GameCharacter.h"
 
